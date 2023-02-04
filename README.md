@@ -82,9 +82,17 @@ dansRoll();
 dansRoll();
 ```
 
-a. Where is closure used in this code? How can you tell?
+a. Where is closure used in this code? How can you tell? 
+
+The closure is located inside of the function inside the return statement. You can tell because first, it is the only function, and second, it is utilizing the name parameter from the outer function. 
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change? 
-c. What is the lexical scope of `newRoll`? function scope
+
+A console.log of dansRoll should produce the same result twice, because a const cannot be redefined, or redeclared, therefore nothing could change.
+
+c. What is the lexical scope of `newRoll`? function scope? 
+
+newRoll is within block scope.
 
 
 ### Task 3 - Stretch Goals
