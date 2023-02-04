@@ -29,12 +29,16 @@ console.log('example task:', processFirstItem(['foo','bar'],function(str){return
   
   Study the code for counter1 and counter2, then answer the questions below.
   
-  1. What is the difference between counter1 and counter2?
+  1. What is the difference between counter1 and counter2? Upon review, closure1 uses a closure, in order to set the count in the outer function and allow it for use within the closure function. Reviewing closure2, 
   
-  2. Which of the two uses a closure? How can you tell?
+  2. Which of the two uses a closure? How can you tell? counter1 uses a closure, and you can tell by the function listed clearly in the return section.
   
   3. In what scenario would the counter1 code be preferable? In what scenario would 
      counter2 be better?  
+
+     counter1 would possibly be better in a larger project with more code, where count being in block scope would not cause issues, and also it allows for easier reusability, keeping the code very dry.
+
+     counter2 would possibly be better in an instance where there is not much code.
 */
 
 // counter1 code
