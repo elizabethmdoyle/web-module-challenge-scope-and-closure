@@ -118,8 +118,12 @@ For example: invoking getInningScore(inning) might return this object:
   */
 
 
-function getInningScore(callback, home, away) {
-      let scoreObject = {};
+function getInningScore(inningCB) {
+
+  return {
+    Home: inningCB(),
+    Away: inningCB()
+  }
 
 }
 
